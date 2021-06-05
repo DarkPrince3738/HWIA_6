@@ -6,12 +6,13 @@ namespace Task4
     {
         static void Main(string[] args)
         {
-            MyReverse();
+            int[] array = { 11, 3, 6, 9, 1};
+            MyReverse(array);
+            //SubArray
         }
-        static void MyReverse()
+        static void MyReverse(int[] array)
         {
-            int[] array = new int[5] { 1, 9, 12, 7, 6 };
-            for (int i = array.Length; i > 0 ; i++)
+            for (int i = array.Length-1; i >= 0 ; i--)
             {
                 Console.Write($"{array[i]} ");
             }
